@@ -17,19 +17,24 @@ syn region kplString start=/"/ skip=/\\\\"/ end=/"/
 
 syn match kplCommand "\\\w\{1,40\}" contains=@NoSpell
 
+syn match kplNumber "\d\+"
+
+syn match kplNumber "\d\+\.\d*"
+
 syn match kplBool "true\|TRUE\|false\|FALSE" contains=@NoSpell
 
-syn match kplCall "\zs[a-z]\w\{1,39\}\ze("
+syn match kplCall "\zs[a-z]\w\{1,39\}\ze(" contains=@NoSpell
 
 hi def link kplTodo TODO
 hi def link kplCommentLine Comment
 hi def link kplCommentRange Comment
 hi def link kplVar Ignore
 hi def link kplType Type
-hi def link kplQualifiers Constant
+hi def link kplQualifiers PreProc
 hi def link kplSymbol Identifier
 hi def link kplNamespace Special
 hi def link kplString String
 hi def link kplCommand PreProc
+hi def link kplNumber Number
 hi def link kplBool Boolean
 hi def link kplCall Function
