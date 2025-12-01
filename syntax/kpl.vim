@@ -1,4 +1,6 @@
 
+syn match kplOperator "[~!@#$%^&\*-+=|:'<,>?/]"
+
 syn match kplTodo contained "TODO" contains=@NoSpell
 syn match kplCommentLine "\/\/.*$" contains=kplTodo
 syn region kplCommentRange start="/\*" end="\*/" contains=kplTodo
@@ -23,18 +25,23 @@ syn match kplNumber "\d\+\.\d*"
 
 syn match kplBool "true\|TRUE\|false\|FALSE" contains=@NoSpell
 
-syn match kplCall "\zs[a-z]\w\{1,39\}\ze(" contains=@NoSpell
+syn match kplBase "\zs[a-z]\w\{1,39\}\ze[(.]" contains=@NoSpell
 
+syn match kplSemicolon ";"
+
+hi def link kplOperator Operator
 hi def link kplTodo TODO
 hi def link kplCommentLine Comment
 hi def link kplCommentRange Comment
 hi def link kplVar Ignore
 hi def link kplType Type
-hi def link kplQualifiers PreProc
+hi def link kplQualifiers Repeat
 hi def link kplSymbol Identifier
 hi def link kplNamespace Special
 hi def link kplString String
 hi def link kplCommand PreProc
 hi def link kplNumber Number
 hi def link kplBool Boolean
-hi def link kplCall Function
+hi def link kplBase Function
+highlight kplSemicolon ctermfg=grey
+
