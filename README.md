@@ -1,5 +1,7 @@
 # KPL Vim Plugin
 
+Adds syntax to .kpl files
+
 ## Install
 
 ```
