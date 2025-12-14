@@ -26,7 +26,7 @@ syn match kplNumber "\d\+\.\d*"
 
 syn match kplBool "true\|TRUE\|false\|FALSE" contains=@NoSpell
 
-syn match kplCall "[()]"
+syn match kplLambda "[{}]"
 
 syn match kplSemicolon ";"
 
@@ -44,5 +44,5 @@ hi def link kplString String
 hi def link kplCommand Conditional
 hi def link kplNumber Number
 hi def link kplBool Boolean
-hi def link kplCall Function
+hi def link kplLambda Function
 hi def link kplSemicolon Comment
