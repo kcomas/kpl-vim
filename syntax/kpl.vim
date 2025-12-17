@@ -28,6 +28,8 @@ syn match kplBool "true\|TRUE\|false\|FALSE" contains=@NoSpell
 
 syn match kplLambda "[{}]"
 
+syn match kplDefine "\[\|\]"
+
 syn match kplSemicolon ";"
 
 hi def link kplOperator Operator
@@ -45,4 +47,5 @@ hi def link kplCommand Conditional
 hi def link kplNumber Number
 hi def link kplBool Boolean
 hi def link kplLambda Function
+hi def link kplDefine TODO
 hi def link kplSemicolon Comment
