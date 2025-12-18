@@ -47,5 +47,5 @@ hi def link kplCommand Conditional
 hi def link kplNumber Number
 hi def link kplBool Boolean
 hi def link kplLambda Function
-hi def link kplDefine TODO
+hi def link kplDefine Repeat
 hi def link kplSemicolon Comment
