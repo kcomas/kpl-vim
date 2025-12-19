@@ -28,9 +28,9 @@ syn match kplBool "true\|TRUE\|false\|FALSE" contains=@NoSpell
 
 syn match kplLambda "[{}]"
 
-syn match kplDefine "\[\|\]"
-
 syn match kplSemicolon ";"
+
+syn match kplDefine "\[\|\]"
 
 hi def link kplOperator Operator
 hi def link kplTodo TODO
@@ -47,5 +47,5 @@ hi def link kplCommand Conditional
 hi def link kplNumber Number
 hi def link kplBool Boolean
 hi def link kplLambda Function
-hi def link kplDefine Repeat
 hi def link kplSemicolon Comment
+hi kplDefine cterm=bold
