@@ -1,5 +1,5 @@
 
-syn match kplOperator "[~!@#$%^&*\-+=|:'<,>?/]"
+syn match kplOperator "[~!@#$%^&*\-+=|:'<,>\.?/]"
 
 syn match kplTodo contained "TODO" contains=@NoSpell
 syn match kplCommentLine "\/\/.*$" contains=kplTodo
@@ -15,14 +15,14 @@ syn match kplQualifiers "Const\|Ref\|Shared\|Namespace\|Mutex" contains=@NoSpell
 
 syn match kplSymbol "`\w\{1,40\}" contains=@NoSpell
 
-syn match kplNamespace "\.\w\{1,40\}" contains=@NoSpell
+syn match kplNamespace "\.[A-Za-z]\w\{1,39\}" contains=@NoSpell
 
 syn region kplString start=/"/ skip=/\\\\"/ end=/"/
 
 syn match kplCommand "\\\w\{1,40\}" contains=@NoSpell
 
 syn match kplNumber "\d\+"
-syn match kplNumber "\d\+\.\d*"
+syn match kplNumber "\d\+\.\d\+"
 
 syn match kplBool "true\|TRUE\|false\|FALSE" contains=@NoSpell
 
