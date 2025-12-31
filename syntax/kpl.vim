@@ -15,7 +15,7 @@ syn match kplQualifiers "Const\|Ref\|Shared\|Namespace\|Mutex" contains=@NoSpell
 
 syn match kplSymbol "`\w\{1,40\}" contains=@NoSpell
 
-syn match kplNamespace "\.[A-Za-z]\w\{1,39\}" contains=@NoSpell
+syn match kplNamespace "\.[A-Za-z]\w\{0,39\}" contains=@NoSpell
 
 syn region kplString start=/"/ skip=/\\\\"/ end=/"/
 
