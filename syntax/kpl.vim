@@ -5,8 +5,6 @@ syn match kplTodo contained "TODO" contains=@NoSpell
 syn match kplCommentLine "\/\/.*$" contains=kplTodo
 syn region kplCommentRange start="/\*" end="\*/" contains=kplTodo
 
-syn match kplIgnore "_\w\{0,39\}" contains=@NoSpell
-
 syn match kplVar "[a-z]\w\{0,39\}" contains=@NoSpell
 
 syn match kplType "[A-Z]\w\{0,39\}" contains=@NoSpell
@@ -14,6 +12,8 @@ syn match kplType "[A-Z]\w\{0,39\}" contains=@NoSpell
 syn match kplQualifiers "Const\|Ref\|Shared\|Namespace\|Mutex" contains=@NoSpell
 
 syn match kplSymbol "`\w\{1,40\}" contains=@NoSpell
+
+syn match kplIgnore "`\?_\w\{0,39\}" contains=@NoSpell
 
 syn match kplNamespace "\.[A-Za-z]\w\{0,39\}" contains=@NoSpell
 
