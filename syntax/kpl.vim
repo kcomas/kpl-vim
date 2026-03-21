@@ -5,9 +5,9 @@ syn match kplTodo contained "TODO" contains=@NoSpell
 syn match kplCommentLine "\/\/.*$" contains=kplTodo
 syn region kplCommentRange start="/\*" end="\*/" contains=kplTodo
 
-syn match kplVar "[a-z]\w\+" contains=@NoSpell
+syn match kplVar "[a-z]\w*" contains=@NoSpell
 
-syn match kplType "[A-Z]\w\+" contains=@NoSpell
+syn match kplType "[A-Z]\w*" contains=@NoSpell
 
 syn match kplQualifiers "Const\|Ref\|Shared" contains=@NoSpell
 
