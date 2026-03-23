@@ -1,7 +1,7 @@
 
-syn match kplOperator "[~!$%^&*\-+=|:'<,>\./]"
+syn match kplOperator "[~!$%^&*\-+=|:'<,>./]"
 
-syn match kplControl "[@#?]"
+syn match kplControl "[@#?\\]"
 
 syn match kplTodo contained "TODO" contains=@NoSpell
 syn match kplCommentLine "\/\/.*$" contains=kplTodo
@@ -28,7 +28,7 @@ syn match kplList "[()]"
 
 syn match kplAction "[{}]"
 
-syn match kplConditional "[\[\]]"
+syn match kplConditional "\[\|\]"
 
 hi def link kplOperator Operator
 hi def link kplControl Special
