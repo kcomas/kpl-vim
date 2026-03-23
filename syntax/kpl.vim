@@ -37,7 +37,7 @@ hi def link kplCommentLine Comment
 hi def link kplCommentRange Comment
 hi def link kplVar Ignore
 hi def link kplType Type
-hi def link kplQualifier Statement
+hi def link kplQualifiers Statement
 hi def link kplSymbol Identifier
 hi def link kplKeyword Keyword
 hi def link kplString String
