@@ -44,5 +44,5 @@ hi def link kplString String
 hi def link kplNumber Number
 hi def link kplSemicolon Comment
 hi def link kplList Function
-hi def link kplAction Operator
+hi def link kplAction Function
 hi def link kplConditional Special
