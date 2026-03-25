@@ -15,7 +15,7 @@ syn match kplQualifiers "Const\|Ref\|Shared" contains=@NoSpell
 
 syn match kplSymbol "\.\w\+" contains=@NoSpell
 
-syn match kplKeyword "`\w\+" contains=@NoSpell
+syn match kplMacro "`\w\+" contains=@NoSpell
 
 syn region kplString start=/"/ skip=/\\\\"/ end=/"/
 
@@ -39,7 +39,7 @@ hi def link kplVar Ignore
 hi def link kplType Type
 hi def link kplQualifiers Statement
 hi def link kplSymbol Identifier
-hi def link kplKeyword Keyword
+hi def link kplMacro Keyword
 hi def link kplString String
 hi def link kplNumber Number
 hi def link kplSemicolon Comment
